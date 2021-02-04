@@ -48,12 +48,12 @@ const store = createStore(rootReducer,
   )
 )
 
-  const rrfProps = {
-    firebase: fbConfig,
-    config: rrfConfig,
-    dispatch: store.dispatch,
-    createFirestoreInstance // <- needed if using firestore
-  }
+const rrfProps = {
+  firebase: fbConfig,
+  config: rrfConfig,
+  dispatch: store.dispatch,
+  createFirestoreInstance // <- needed if using firestore
+}
 ReactDOM.render(
   <React.StrictMode>
   {/* Provider at work */}
