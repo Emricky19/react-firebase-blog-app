@@ -19,6 +19,7 @@ export const ProjectDetails = (props) => {
                     <div className="card-content">
                         <span className="card-title">{project.title} </span>
                         <p>{project.content}</p>
+                        <i className="material-icons right-align red-text">delete</i>
                     </div>
                     <div className="card-action grey lighten-4 grey-text">
                         <div>Posted by {project.authorFirstName + " " + project.authorLastName}</div>
