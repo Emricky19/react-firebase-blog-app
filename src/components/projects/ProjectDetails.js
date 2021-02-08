@@ -6,10 +6,7 @@ import {compose} from 'redux'; //to allow to higher order component
 import {Redirect} from 'react-router-dom'
 import moment from 'moment'
 
-export const ProjectDetails = (props) => {
-    // console.log(props)  
-    // const id = props.match.params.id
-    
+export const ProjectDetails = (props) => {    
     const {project, auth} = props
     if(!auth.uid) return <Redirect to="/signin" />
     if(project){
